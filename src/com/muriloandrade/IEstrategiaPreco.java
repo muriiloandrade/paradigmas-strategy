@@ -1,5 +1,5 @@
 package com.muriloandrade;
 
-public interface IEstrategiaVenda {
+public interface IEstrategiaPreco {
     double getTotal(Venda venda);
 }
