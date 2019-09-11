@@ -37,7 +37,7 @@ public class Registradora {
             System.err.println("Erro => " + ex.toString());
         }
 
-        EstrategiaPrecoFactory estrategia = new EstrategiaPrecoFactory();
+        EstrategiaPrecoFactory estrategia = EstrategiaPrecoFactory.getInstance();
         try {
             System.out.printf("Preço com desconto: %f", estrategia.getEstrategiaPreco(nomeEstrategia).getTotal(venda));
         } catch (NullPointerException ex) {
